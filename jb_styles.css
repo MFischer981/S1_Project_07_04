@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Montserrat');
+
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   
+   Date:       
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background: url("https://i.imgur.com/7V9tYmw.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    flex: 1 1 100%;
+    display: block;
+    height: 240px;
+    background: #02e1ed; /* Old browsers */
+background: -moz-linear-gradient(top, #02e1ed 1%, #020d54 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #02e1ed 1%,#020d54 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #02e1ed 1%,#020d54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02e1ed', endColorstr='#020d54',GradientType=0 ); /* IE6-9 */
+    padding: 20px;
+    border: 4px solid rgb(238, 110, 36);
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header img {
+    height: 70%;
+    filter: drop-shadow(4px 4px 3px black);
+}
+
+header nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+}
+
+header nav a {
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
+    background-size: cover;
+    padding: 4px 1vw;
+    border-radius: 40px;
+    margin: .4vw;
+    box-shadow: 0px 0px 8px black;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .2s;
+}
+
+header nav a:hover {
+    box-shadow: 0px 0px 16px black;
+    filter: brightness(140%);
+}
+
+aside {
+    flex: 1 2 200px;
+    -webkit-flex: 1 2 200px;
+    background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
+    background-size: cover;
+    padding: 2vw;
+    color: white;
+    border-radius: 40px;
+    margin: 1vw;
+    box-shadow: 0px 0px 8px black;
+}
+
+aside h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px black;
+}
+
+aside h4 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 24px;
+    text-shadow: 0px 0px 8px black;
+}
+
+aside p {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px black;
+}
+
+article {
+    -webkit-flex: 3 1 400px;
+    flex: 3 1 400px;
+    background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
+    background-size: cover;
+    padding: 2vw;
+    color: white;
+    border-radius: 40px;
+    margin: 1vw;
+    box-shadow: 0px 0px 8px black;
+}
+
+article p {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px black;
+}
+
+article address {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px black;
+}
+
+article h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px black;
+}
+
+nav.vertical {
+    flex: 1 4 200px;
+    -webkit-flex: 1 2 200px;
+    background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
+    background-size: cover;
+    padding: 2vw;
+    color: white;
+    border-radius: 40px;
+    margin: 1vw;
+    box-shadow: 0px 0px 8px black;
+}
+
+nav.vertical a {
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
+    background-size: cover;
+    padding: 4px 1vw;
+    border-radius: 40px;
+    margin: .4vw;
+    box-shadow: 0px 0px 8px black;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .2s;
+    display: block;
+}
+
+nav.vertical a:hover {
+    box-shadow: 0px 0px 16px black;
+    filter: brightness(140%);
+}
+
+nav.vertical h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px black;
+}
+
+@media only screen and (max-width: 702px) {
+    aside {
+        order:  99;
+    }
+
+    article {
+        order: 98;
+    }
+
+    nav.vertical {
+        order: 100;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    aside {
+        display: none;
+    }
+}
