@@ -39,11 +39,16 @@ header {
     flex: 1 1 100%;
     display: block;
     height: 240px;
-    background: #02e1ed; /* Old browsers */
-background: -moz-linear-gradient(top, #02e1ed 1%, #020d54 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #02e1ed 1%,#020d54 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #02e1ed 1%,#020d54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02e1ed', endColorstr='#020d54',GradientType=0 ); /* IE6-9 */
+    background: #02e1ed;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #02e1ed 1%, #020d54 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #02e1ed 1%, #020d54 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #02e1ed 1%, #020d54 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02e1ed', endColorstr='#020d54', GradientType=0);
+    /* IE6-9 */
     padding: 20px;
     border: 4px solid rgb(238, 110, 36);
     border-top: none;
@@ -194,6 +199,8 @@ div {
     display: none;
 }
 
+
+/* TABLET */
 @media only screen and (max-width: 768px) {
     div {
         display: block;
@@ -234,11 +241,8 @@ div {
         position: relative;
     }
 
-}
-
-@media only screen and (max-width: 702px) {
     aside {
-        order:  99;
+        order: 99;
     }
 
     article {
@@ -250,6 +254,7 @@ div {
     }
 }
 
+/* MOBILE */
 @media only screen and (max-width: 480px) {
     aside {
         display: none;
