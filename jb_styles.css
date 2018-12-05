@@ -41,6 +41,7 @@ body {
 
 /* Set the header to the full width of the page and shrink and grow evenly. Set background of linear gradient with progressive enhancement. Set border and paffing with border radius on bottom. */
 header {
+    -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
     display: block;
     height: 240px;
@@ -78,8 +79,8 @@ header nav {
 
 /* Define evenly sized navigation links within flexbox. */
 header nav a {
-    flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
     background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
     background-size: cover;
     padding: 4px 1vw;
@@ -102,8 +103,8 @@ header nav a:hover {
 
 /* Define aside with a growth ratio of 1 and shrink ratio of 2 with a base size of 200px. */
 aside {
-    flex: 1 2 200px;
     -webkit-flex: 1 2 200px;
+    flex: 1 2 200px;
     background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
     background-size: cover;
     padding: 2vw;
@@ -169,8 +170,8 @@ article h1 {
 
 /* Vertical navigation with growth ratio of 1 and shrink ratio of 4 with a base width of 200px. */
 nav.vertical {
-    flex: 1 4 200px;
     -webkit-flex: 1 2 200px;
+    flex: 1 4 200px;
     background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
     background-size: cover;
     padding: 2vw;
