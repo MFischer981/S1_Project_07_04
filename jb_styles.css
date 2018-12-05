@@ -7,8 +7,8 @@
    Tutorial 5
    Case Problem 4
    
-   Author:   
-   Date:       
+   Author:   Micah Fischer
+   Date:     12-3-18  
    
    Filename: jb_styles.css
 
@@ -17,24 +17,29 @@
 
 */
 
+/* Reset all padding and margins. */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Set main to a display of flex-box. Have flex items in a row that wraps to the line below. Justify flex box content to space around in order to have even space between objects and the edge of page. */
 main {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
+/* Set background to image. Set background size to cover. Set background attachment to fixed so body content scrolls over background */
 body {
     background: url("https://i.imgur.com/7V9tYmw.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Set the header to the full width of the page and shrink and grow evenly. Set background of linear gradient with progressive enhancement. Set border and paffing with border radius on bottom. */
 header {
     flex: 1 1 100%;
     display: block;
@@ -56,11 +61,13 @@ header {
     border-bottom-right-radius: 30px;
 }
 
+/* Add a height of 70% to images in the header. Add a drop shadow filter to the header image. */
 header img {
     height: 70%;
     filter: drop-shadow(4px 4px 3px black);
 }
 
+/* Set header navigation to a flexbox. Apply webkit extension for progressive enhancement. */
 header nav {
     display: -webkit-flex;
     display: flex;
@@ -69,6 +76,7 @@ header nav {
 
 }
 
+/* Define evenly sized navigation links within flexbox. */
 header nav a {
     flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
@@ -86,11 +94,13 @@ header nav a {
     transition: .2s;
 }
 
+/* Hover effect for links. */
 header nav a:hover {
     box-shadow: 0px 0px 16px black;
     filter: brightness(140%);
 }
 
+/* Define aside with a growth ratio of 1 and shrink ratio of 2 with a base size of 200px. */
 aside {
     flex: 1 2 200px;
     -webkit-flex: 1 2 200px;
@@ -103,6 +113,7 @@ aside {
     box-shadow: 0px 0px 8px black;
 }
 
+/* Aside font styles. */
 aside h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
@@ -122,6 +133,7 @@ aside p {
     text-shadow: 0px 0px 8px black;
 }
 
+/* Define article with a growth ratio of 3 and shrink ratio of 1 with a base size of 400px. */
 article {
     -webkit-flex: 3 1 400px;
     flex: 3 1 400px;
@@ -134,6 +146,7 @@ article {
     box-shadow: 0px 0px 8px black;
 }
 
+/* Article font styles */
 article p {
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -154,6 +167,7 @@ article h1 {
     text-shadow: 0px 0px 8px black;
 }
 
+/* Vertical navigation with growth ratio of 1 and shrink ratio of 4 with a base width of 200px. */
 nav.vertical {
     flex: 1 4 200px;
     -webkit-flex: 1 2 200px;
@@ -166,9 +180,8 @@ nav.vertical {
     box-shadow: 0px 0px 8px black;
 }
 
+/* Vertical navigation styles. Set a background with a border and padding. Border radius style rule and box shadow applied. Transition applied to make hover appear smooth. */
 nav.vertical a {
-    flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
     background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
     background-size: cover;
     padding: 4px 1vw;
@@ -184,30 +197,36 @@ nav.vertical a {
     display: block;
 }
 
+/* Vertical nav links hover effect. */
 nav.vertical a:hover {
     box-shadow: 0px 0px 16px black;
     filter: brightness(140%);
 }
 
+/* Navigation h1 headings. */
 nav.vertical h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
     text-shadow: 0px 0px 8px black;
 }
 
+/* Hide divs on desktop. */
 div {
     display: none;
 }
 
 
-/* TABLET */
+/* Tablet styles in a media query for devices with a max width of 768 pixels.*/
 @media only screen and (max-width: 768px) {
+
+    /* Display div on tablets. */
     div {
         display: block;
         width: 100%;
         margin-top: 10px;
     }
 
+    /* Hide nav links on mobile, until tablet menu is hovered. */
     nav a {
         display: none;
     }
@@ -216,6 +235,7 @@ div {
         display: none;
     }
 
+    /* Span styles. */
     span {
         background: url("https://www.sketchuptextureclub.com/public/texture_d/0053-dark-fine-wood-texture-seamless-hr.jpg");
         background-size: cover;
@@ -232,6 +252,7 @@ div {
         display: block;
     }
 
+    /* On div hover show links and display div at relative positioning. */
     div:hover a {
         display: block;
         z-index: 1000;
@@ -241,6 +262,7 @@ div {
         position: relative;
     }
 
+    /* Change order on tablets. */
     aside {
         order: 99;
     }
@@ -254,7 +276,7 @@ div {
     }
 }
 
-/* MOBILE */
+/* Mobile styles in a media query for devices with a max width of 480 pixels.*/
 @media only screen and (max-width: 480px) {
     aside {
         display: none;
